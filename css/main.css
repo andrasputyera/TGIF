@@ -1,0 +1,229 @@
+/**** DEFAULTS *****/
+body {
+
+    background: linear-gradient(rgba(245, 244, 245, 0.9), rgba(245, 244, 245, 0.9));
+    background-attachment: fixed;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+
+.marginBottom40 {
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.emailLink {
+    font-size: 25px;
+    border-bottom: 1px dotted;
+    color: black;
+}
+
+.navBar {
+    background-color: lightblue;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+}
+
+
+
+/**** INDEX PAGE *****/
+.card-header:first-child {
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.card {
+    border: none;
+}
+
+.accordion .card:not(:first-of-type) .card-header:first-child {
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+
+}
+
+/****** HOUSE AND SENATE TABLE FILTER PAGES******/
+.textArea {
+    padding-left: 1em;
+}
+
+.houseImg {
+    background: url(images/congress_seal.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 250px;
+
+}
+
+.senateImg {
+    background-image: url(images/senate_seal.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 250px;
+}
+
+.filterAreaContainer {
+    margin-top: 30px;
+}
+
+.filterCheckboxes label {
+    margin-right: 10px;
+}
+
+.filterCheckboxes input {
+    margin-right: 5px;
+}
+
+.dropdownArea select {
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+/**************/
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
+table.tableDisplay {
+    line-height: 10px;
+}
+
+table.tableDisplay td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.tableDisplay th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.tableDisplay thead {
+    background-color: gray;
+}
+
+.heightThead {
+    height: 50px;
+}
+
+.widthSmall {
+    width: 20%;
+}
+
+.widthMedium {
+    width: 40%;
+}
+
+.widthTH {
+    width: 33%;
+}
+
+.widthTHsmall {
+    width: 25%;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+/***** FOOTER *******/
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    height: 60px;
+    margin: 50px 0;
+}
+
+.footerText {
+    display: block;
+    margin: auto;
+}
+
+table {
+    display: none;
+}

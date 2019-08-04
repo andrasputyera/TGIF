@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senate</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>TGIF Logo</h1>
+            <a class="emailLink" href="mailto:info@tgif.net">info@tgif.net</a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navBar">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Congress113
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="house-data.html">House</a>
+                            <a class="dropdown-item" href="senate-data.html">Senate</a>
+                        </div>
+                    </li>
+                    <!--Attendance-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Attendance
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="house-attendance.html">House</a>
+                            <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+                        </div>
+                    </li>
+                    <!--PARTY LOYALTY-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Party Loyalty
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="house-party-loyalty.html">House</a>
+                            <a class="dropdown-item" href="senate-party-loyalty.html">Senate</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="bodyArea">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Party Loyalty</h2>
+                    <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.</p>
+                </div>
+                <div class="col-6">
+                    <h4 class="text-right">Senate at a glance</h4>
+                    <div class="sk-cube-grid">
+                        <div class="sk-cube sk-cube1"></div>
+                        <div class="sk-cube sk-cube2"></div>
+                        <div class="sk-cube sk-cube3"></div>
+                        <div class="sk-cube sk-cube4"></div>
+                        <div class="sk-cube sk-cube5"></div>
+                        <div class="sk-cube sk-cube6"></div>
+                        <div class="sk-cube sk-cube7"></div>
+                        <div class="sk-cube sk-cube8"></div>
+                        <div class="sk-cube sk-cube9"></div>
+                    </div>
+                    <table id="senate-glance" class="table table-borderless table-striped table-hover tableDisplay">
+                        <thead>
+                            <tr class="heightThead">
+                                <th>Party</th>
+                                <th>Number of Reps</th>
+                                <th>% Voted with Party</th>
+                            </tr>
+                        </thead>
+                        <tbody id="topTableBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <h4>Least Loyal (Bottom 10% of Party)</h4>
+                    <div class="sk-cube-grid">
+                        <div class="sk-cube sk-cube1"></div>
+                        <div class="sk-cube sk-cube2"></div>
+                        <div class="sk-cube sk-cube3"></div>
+                        <div class="sk-cube sk-cube4"></div>
+                        <div class="sk-cube sk-cube5"></div>
+                        <div class="sk-cube sk-cube6"></div>
+                        <div class="sk-cube sk-cube7"></div>
+                        <div class="sk-cube sk-cube8"></div>
+                        <div class="sk-cube sk-cube9"></div>
+                    </div>
+                    <table id="senate-least" class="table table-borderless table-striped table-hover tableDisplay">
+                        <thead>
+                            <tr class="heightThead">
+                                <th>Name</th>
+                                <th>Number of Missed Votes</th>
+                                <th>% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leastLoyalBody">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-6">
+                    <h4 class="text-right">Most Loyal (Top 10% of Party)</h4>
+                    <div class="sk-cube-grid">
+                        <div class="sk-cube sk-cube1"></div>
+                        <div class="sk-cube sk-cube2"></div>
+                        <div class="sk-cube sk-cube3"></div>
+                        <div class="sk-cube sk-cube4"></div>
+                        <div class="sk-cube sk-cube5"></div>
+                        <div class="sk-cube sk-cube6"></div>
+                        <div class="sk-cube sk-cube7"></div>
+                        <div class="sk-cube sk-cube8"></div>
+                        <div class="sk-cube sk-cube9"></div>
+                    </div>
+                    <table id="senate-most" class="table table-borderless table-striped table-hover tableDisplay">
+                        <thead>
+                            <tr class="heightThead">
+                                <th class="widthMedium">Name</th>
+                                <th class="widthMedium">Number of Missed Votes</th>
+                                <th class="widthSmall">% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mostLoyalBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="footer">
+        <h4 class="footerText">© 2018 TGIF | All Rights Reserved</h4>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/senate-party-loyalty.js"></script>
+
+</body>
+
+</html>
